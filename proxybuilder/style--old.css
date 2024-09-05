@@ -1,0 +1,46 @@
+body {
+	font-family: 'Trebuchet MS', sans-serif;
+	font-weight: normal;
+}
+input[type="text"] {
+	width:60%;
+}
+#prependDisplay {
+	width:33%;
+}
+#myURL {
+    width:60%;
+}
+#display {
+	word-wrap: break-word;
+	width: 100%;
+	width:60%; 
+}
+p {
+	margin-top:40px;
+}
+p:first-child {
+	margin-top:0;
+}
+p.header {
+	margin-top: -20px;
+	font-family: 'Raleway', 'Trebuchet MS', sans-serif;
+}
+div.header {
+	text-align:center; 
+	margin: 50px 0;
+}
+#indicator, #usermessages{
+	color: green;
+}
+#d_clip_button {
+    width:33%;
+}
+h2 {
+	font-family: 'Nothing You Could Do', Helvetica, Arial, sans-serif;
+}
+.side-image {
+	max-width: 400px;
+	width: 100%;
+	margin-bottom: 40px;
+}

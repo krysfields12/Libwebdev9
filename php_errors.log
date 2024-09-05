@@ -1,0 +1,59 @@
+[10-Apr-2018 10:36:53 America/New_York] PHP Fatal error:  Declaration of Drush\Command\DrushInputAdapter::hasParameterOption() must be compatible with Symfony\Component\Console\Input\InputInterface::hasParameterOption($values, $onlyParams = false) in phar:///usr/local/bin/drush/lib/Drush/Command/DrushInputAdapter.php on line 27
+[10-Apr-2018 10:37:33 America/New_York] PHP Fatal error:  Declaration of Drush\Command\DrushInputAdapter::hasParameterOption() must be compatible with Symfony\Component\Console\Input\InputInterface::hasParameterOption($values, $onlyParams = false) in phar:///usr/local/bin/drush/lib/Drush/Command/DrushInputAdapter.php on line 27
+[10-Apr-2018 10:41:13 America/New_York] PHP Fatal error:  Declaration of Drush\Command\DrushInputAdapter::hasParameterOption() must be compatible with Symfony\Component\Console\Input\InputInterface::hasParameterOption($values, $onlyParams = false) in phar:///usr/local/bin/drush/lib/Drush/Command/DrushInputAdapter.php on line 27
+[02-Nov-2018 07:53:04 America/New_York] PHP Fatal error:  Allowed memory size of 1610612736 bytes exhausted (tried to allocate 268435456 bytes) in phar:///usr/local/bin/composer/src/Composer/DependencyResolver/Solver.php on line 220
+[19-Nov-2018 11:51:38 America/New_York] exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /var/www/html/libraries-towson-edu/core/lib/Drupal/Core/Database/Statement.php:59
+Stack trace:
+#0 /var/www/html/libraries-towson-edu/core/lib/Drupal/Core/Database/Statement.php(59): PDOStatement->execute(Array)
+#1 /var/www/html/libraries-towson-edu/core/lib/Drupal/Core/Database/Connection.php(625): Drupal\Core\Database\Statement->execute(Array, Array)
+#2 /var/www/html/libraries-towson-edu/core/lib/Drupal/Core/Database/Driver/mysql/Connection.php(358): Drupal\Core\Database\Connection->query('DELETE FROM {se...', Array, Array)
+#3 /var/www/html/libraries-towson-edu/core/lib/Drupal/Core/Database/Query/Delete.php(55): Drupal\Core\Database\Driver\mysql\Connection->query('DELETE FROM {se...', Array, Array)
+#4 /var/www/html/libraries-towson-edu/core/lib/Drupal/Core/Lock/DatabaseLockBackend.php(170): Drupal\Core\Database\Query\Delete->execute()
+#5 [internal function]: Drupal\Core\Lock\DatabaseLockBackend->releaseAll()
+#6 /var/www/html/libraries-towson-edu/core/includes/bootstrap.inc(1037): call_user_func_array(Array, Array)
+#7 [internal function]: _drupal_shutdown_function()
+#8 {main}
+
+Next exception 'Drupal\Core\Database\DatabaseExceptionWrapper' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away: DELETE FROM {semaphore} 
+WHERE value = :db_condition_placeholder_0; Array
+(
+    [:db_condition_placeholder_0] => 478161045bf2ea18076883.47109834
+)
+' in /var/www/html/libraries-towson-edu/core/lib/Drupal/Core/Database/Connection.php:686
+Stack trace:
+#0 /var/www/html/libraries-towson-edu/core/lib/Drupal/Core/Database/Connection.php(650): Drupal\Core\Database\Connection->handleQueryException(Object(PDOException), 'DELETE FROM {se...', Array, Array)
+#1 /var/www/html/libraries-towson-edu/core/lib/Drupal/Core/Database/Driver/mysql/Connection.php(358): Drupal\Core\Database\Connection->query('DELETE FROM {se...', Array, Array)
+#2 /var/www/html/libraries-towson-edu/core/lib/Drupal/Core/Database/Query/Delete.php(55): Drupal\Core\Database\Driver\mysql\Connection->query('DELETE FROM {se...', Array, Array)
+#3 /var/www/html/libraries-towson-edu/core/lib/Drupal/Core/Lock/DatabaseLockBackend.php(170): Drupal\Core\Database\Query\Delete->execute()
+#4 [internal function]: Drupal\Core\Lock\DatabaseLockBackend->releaseAll()
+#5 /var/www/html/libraries-towson-edu/core/includes/bootstrap.inc(1037): call_user_func_array(Array, Array)
+#6 [internal function]: _drupal_shutdown_function()
+#7 {main}
+[19-Nov-2018 11:52:08 America/New_York] exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /var/www/html/libraries-towson-edu/core/lib/Drupal/Core/Database/Statement.php:59
+Stack trace:
+#0 /var/www/html/libraries-towson-edu/core/lib/Drupal/Core/Database/Statement.php(59): PDOStatement->execute(Array)
+#1 /var/www/html/libraries-towson-edu/core/lib/Drupal/Core/Database/Connection.php(625): Drupal\Core\Database\Statement->execute(Array, Array)
+#2 /var/www/html/libraries-towson-edu/core/lib/Drupal/Core/Database/Driver/mysql/Connection.php(358): Drupal\Core\Database\Connection->query('DELETE FROM {se...', Array, Array)
+#3 /var/www/html/libraries-towson-edu/core/lib/Drupal/Core/Database/Query/Delete.php(55): Drupal\Core\Database\Driver\mysql\Connection->query('DELETE FROM {se...', Array, Array)
+#4 /var/www/html/libraries-towson-edu/core/lib/Drupal/Core/Lock/DatabaseLockBackend.php(170): Drupal\Core\Database\Query\Delete->execute()
+#5 [internal function]: Drupal\Core\Lock\DatabaseLockBackend->releaseAll()
+#6 /var/www/html/libraries-towson-edu/core/includes/bootstrap.inc(1037): call_user_func_array(Array, Array)
+#7 [internal function]: _drupal_shutdown_function()
+#8 {main}
+
+Next exception 'Drupal\Core\Database\DatabaseExceptionWrapper' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away: DELETE FROM {semaphore} 
+WHERE value = :db_condition_placeholder_0; Array
+(
+    [:db_condition_placeholder_0] => 13279838185bf2ea364ee5e6.36647541
+)
+' in /var/www/html/libraries-towson-edu/core/lib/Drupal/Core/Database/Connection.php:686
+Stack trace:
+#0 /var/www/html/libraries-towson-edu/core/lib/Drupal/Core/Database/Connection.php(650): Drupal\Core\Database\Connection->handleQueryException(Object(PDOException), 'DELETE FROM {se...', Array, Array)
+#1 /var/www/html/libraries-towson-edu/core/lib/Drupal/Core/Database/Driver/mysql/Connection.php(358): Drupal\Core\Database\Connection->query('DELETE FROM {se...', Array, Array)
+#2 /var/www/html/libraries-towson-edu/core/lib/Drupal/Core/Database/Query/Delete.php(55): Drupal\Core\Database\Driver\mysql\Connection->query('DELETE FROM {se...', Array, Array)
+#3 /var/www/html/libraries-towson-edu/core/lib/Drupal/Core/Lock/DatabaseLockBackend.php(170): Drupal\Core\Database\Query\Delete->execute()
+#4 [internal function]: Drupal\Core\Lock\DatabaseLockBackend->releaseAll()
+#5 /var/www/html/libraries-towson-edu/core/includes/bootstrap.inc(1037): call_user_func_array(Array, Array)
+#6 [internal function]: _drupal_shutdown_function()
+#7 {main}
+[23-Sep-2019 21:50:57 America/New_York] PHP Fatal error:  Call to a member function getConfigDependencyKey() on null in /var/www/html/libraries-towson-edu/core/modules/taxonomy/src/Plugin/views/filter/TaxonomyIndexTid.php on line 394

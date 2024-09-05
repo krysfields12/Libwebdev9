@@ -1,0 +1,181 @@
+body {
+  font-family: proxima-nova, sans-serif !important;
+  font-size: 1.4rem;
+}
+.region.region-content {
+margin-top: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: proxima-nova, sans-serif;
+  text-rendering: optimizeLegibility;
+  letter-spacing: 0;
+  color: #000;
+}
+h1 {
+  font-size: 5.1rem;
+  margin-bottom: .74em; 
+}
+h2 {
+  font-size: 3.85rem;
+  margin: 35px 0;
+}
+h3 {
+  font-size: 2.6rem;
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+h3, h4 {
+  font-weight: 700;
+  font-style: normal;
+}
+h4, h5 {
+ margin-bottom: 20px;
+ text-transform: uppercase;
+}
+h4 {
+  color: #666;
+  font-size: 1.8rem;
+}
+h5 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+h6 {
+  text-decoration: underline;
+}
+p {
+  font-size: 1.7rem;
+}
+
+.view-header,div.content > div > ul > li {
+  font-family: proxima-nova, sans-serif;
+  font-size: 1.5rem;
+
+}
+div.content > div > ul > li {
+ margin-left: 20px;
+}
+ol.breadcrumb {
+ background-color: transparent;
+ border-bottom: 1px solid #e6e6e6;
+ padding: 20px 0;
+}
+ol.breadcrumb li {
+  font-family:proxima-nova, sans-serif;
+  letter-spacing: 0.03em;
+  line-height: 1.6em;
+  font-size: 1.15em;
+  text-transform: uppercase;
+  color: #565656;
+}
+ol.breadcrumb li.active {
+ font-family:proxima-nova, sans-serif;
+ font-weight: 400; /* Possibly make this bold */
+ color: #000;
+}
+.main-container .region.region-content .fa {
+  margin-right: 14px;
+}
+.region.region-content {
+ margin-left: 25px;
+}
+footer .nav li {
+  display: inline-block;
+}
+footer, .footer {
+  background-color: #ffcc00;
+  font-family: proxima-nova, sans-serif;
+  font-size: 1.25em;
+  color: #000;
+  padding: 0 0 20px 0;
+}
+.microsite-footer,
+#block-universityarchivesfooter {
+  background: #e0e7f2;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+.microsite-footer p,
+#block-universityarchivesfooter p,
+.spua-title {
+  text-transform: uppercase;
+  border-top: 1px solid lightgray;
+  padding-top: 9px;
+}
+.spua-title {
+text-transform: none !important; 
+}
+/*
+#block-universityarchivesfooter .col-md-5 {
+ line-height:3.75em;
+}*/
+.spua-social {line-height: 3.75em;}
+
+.spua-footer-data {
+  font-family: proxima-nova, sans-serif;
+  font-size: 19px;
+  text-transform: none;
+}
+#block-footer {margin-top: 35px;}
+footer address, #block-universityarchivesfooter > h2 {
+  font-family: proxima-nova,sans-serif;
+  font-size: 1.35em;
+  line-height: 1.2em;
+  padding-left: 15px;
+}
+footer .row {
+  margin: 0; 
+  width: 100%;
+}
+footer .footer-social a {line-height: 2.6em;}
+footer a {color: #000;}
+i,
+svg,
+.svg-inline--fa,
+footer img {font-size: 1.5em; margin-right: 10px;} /*Primarily targets FA icons*/
+footer address {
+  font-weight: bold;
+}
+footer .menu.nav {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 14px;
+  border-top: 1px solid #e5b607
+}
+#block-footer > div, #block-footer > div > div  {margin:0;}
+.page-header {border-bottom: 0;}
+.user-title {
+  border-bottom: 1px solid #eee;
+  font-family: proxima-nova,sans-serif;
+  font-size: 29px; padding-bottom: 10.5px;
+  color: #4c4c4c;
+}
+
+/* Webform */
+form legend {
+  margin-bottom: 0;
+  padding-top: 24px;
+}
+.webform-submission-form #edit-actions {
+  margin-top: 24px;
+}
+/* Audio Field Player */
+.audiofield label {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+.field--name-field-metadata {
+  margin-top: 80px!important;
+  padding: 26px 40px 40px 40px;
+  background-color: #e6e6e6;
+  color: #000;
+}
+.field--name-field-metadata p {
+  font-size: 20px;
+}

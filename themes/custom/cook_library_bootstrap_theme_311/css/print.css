@@ -1,0 +1,11 @@
+@media print {
+.covid-block {
+  display: none;
+}
+.page-break-before {
+  page-break-before: always;
+}
+#live-chat {
+  display: none !important; 
+}
+}

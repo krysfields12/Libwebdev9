@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Proxy Builder</title>
+  <meta name="description" content="Prepend Links to TU Resources">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="zeroclipboard-2.2.0/dist/ZeroClipboard.js"></script>
+<link rel="stylesheet" type="text/css" href="skeleton-custom.css">
+<link rel="stylesheet"  type="text/css" href="style.css">
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="main container">
+<div class="row">
+	<div class="twelve columns header" style="">
+		<h2>Proxy Builder</h2>
+		<p class="header">Make your links to TU e-resources work from anywhere off campus.</p>
+	</div>
+</div><!--1st row-->
+<div class="row">
+	<div class="six columns">
+		<img class="side-image" src="library-at-night.jpg">
+	</div>
+	<div class="six columns">
+		<p>1. Enter link to the library resource.</p>
+		<input id="myURL" type="text" placeholder="URL">
+		<button id="prependDisplay">Proxy!</button>
+		<p>2. Copy new link<span id="indicator"></span> into your assignment, syllabus, or email.</p>
+		<input type="text" id="display">
+		<button id="d_clip_button" class="my_clip_button" data-clipboard-target="display">Copy</button>
+		<p class="step-3">3. (Recommended) Test the link from an off campus network.</p>
+	</div>
+
+</div><!--2nd row-->
+</div><!--container-->
+<script>
+$(document).ready(function(){
+	//if there's an error message
+	//hide the copy button
+	//don't load the following code
+	//change width of new URL text box
+	  var clip = new ZeroClipboard($("#d_clip_button"));
+	  clip.on("ready", function() {
+                console.log("ready");
+		this.on("aftercopy", (function(event){ 
+				$( "#d_clip_button" ).html("<img src='youreawesome.png' height='13px'>");
+			}));
+	  });
+});
+</script>
+<script>
+$(document).ready(function(){
+	//when click the button
+    $("#prependDisplay").click(function(){
+    //get the value of the input and concatenate both strings   
+        //edit prepend here
+        var prepend = "http://proxy-tu.researchport.umd.edu/login?url=";
+        var rawURL = $("#myURL").val();
+        //removes old prepend (WAM style)
+        //use "" instead of regular expressions
+        var originalURL = rawURL.replace("http://proxy-tu.researchport.umd.edu/login?url=", "").replace(/\s|\t|\r|\n/g, "");
+        //adds new prepend (determined by variable prepend as defined here)
+        var proxiedLink = prepend + originalURL;
+        //displays the new proxied link in the element with the id set to "display"
+	    $("#display, #d_clip_button").show();
+	    $("#indicator").html(" below");
+    	$( "#display" ).val( proxiedLink );
+    });
+    $("input, textarea")
+   		.focus(function(){ 
+    		$(this).select();
+   		});
+   	$("#myURL")
+   		.focus(function(){ 
+    		$("#userMessages").html("");
+    		$("#d_clip_button").html("Copy");
+	        $("#display").val("");
+   		});
+});
+</script>
+</body>
+</html>

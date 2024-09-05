@@ -1,0 +1,18 @@
+.gsc-control-cse, .gsc-control-cse .gsc-table-result {
+    font-size: 16px !important;
+}
+.gsc-control-cse .gs-spelling, .gsc-control-cse .gs-result .gs-title, .gsc-control-cse .gs-result .gs-title * {
+    font-size: 20px !important;
+}
+.gsc-result .gs-title {
+    height: 1.4em !important;
+    overflow: inherit !important;
+}
+.gsc-thumbnail-inside,
+.gsc-url-top,
+#gsc-result-info {
+ padding-left: 0 !important;
+}
+.gsc-result-info {
+  font-size: 14px;
+}

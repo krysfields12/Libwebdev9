@@ -1,0 +1,53 @@
+{#
+/**
+ * @file
+ * Default theme implementation to present all user data.
+ *
+ * This template is used when viewing a registered user's page,
+ * e.g., example.com/user/123. 123 being the user's ID.
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ *   print a subset such as 'content.field_example'. Fields attached to a user
+ *   such as 'user_picture' are available as 'content.user_picture'.
+ * - attributes: HTML attributes for the container element.
+ * - user: A Drupal User entity.
+ *
+ * @see template_preprocess_user()
+ *
+ * @ingroup themeable
+ */
+#}
+{% set lname %}{{ content.field_user_last_name }}{% endset %}	
+{% set fname %}{{ content.field_user_first_name }}{% endset %}	
+{% set utitle %}{{ content.field_user_title }}{% endset %}	
+{% set dept %}{{ content.field_dept }}{% endset %}	
+{% set phone %}{{ content.field_phone }}{% endset %}	
+{% set email %}{{ content.field_public_email }}{% endset %}	
+{% set pronouns %}{{ content.field_pronouns }}{% endset %}
+{% set interests %}{{ content.field_interests }}{% endset %}	
+{% set picture %}{{ content.user_picture }}{% endset %}	
+{% set presentations %}{{ content.field_presentations }}{% endset %}	
+{% set subjectArea %}{{ content.field_subject_areas }}{% endset %}	
+{% set youcanbookme %}{{ content.field_youcanbook_me }}{% endset %}
+<article{{ attributes }}>
+  {% if content %}
+    <h1 class="page-header" id="user">{{fname|striptags|trim}} {{lname|striptags|raw}}</h1>
+    <h2 class="user-title">{{utitle}}</h2>
+  <div class="col-md-3">  
+    {{ picture }}
+    <div class="info">{{pronouns}}</div>
+    <div class="info">{{phone}}</div>
+    <div class="info">{{email}}</div>
+    {% if dept %}<div class="info">{{dept|striptags|trim}}</div>{% endif %}
+    {% if youcanbookme %}<div class="info">{{ youcanbookme }}</div>{% endif %}
+  </div>
+  <div class="col-md-9">  
+    {% if content.field_interests %}<div class="info">{{content.field_interests}}</div>{% endif %}
+    {% if subjectArea %}<div class="info">{{ subjectArea }}</div>{% endif %}
+    {% if presentations %}<div class="info">{{ presentations }}</div>{% endif %}
+  </div>
+
+  {% endif %}
+    
+</article>

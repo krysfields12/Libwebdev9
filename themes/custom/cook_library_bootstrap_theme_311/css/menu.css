@@ -1,0 +1,243 @@
+/*Styling Across menus*/
+a:focus { outline: thin dotted !important; }	
+
+/*Styling for top navigation menu*/
+.navbar-nav {
+  font-size: 1em;
+  font-weight: 600;
+  color: #000;
+}
+#navbar > div.row.header > div.col-md-7.navbar-header.navbar-right {
+  margin: 0;
+}
+@media (max-width: 992px) {
+.navbar-nav>li {
+    float: none;
+}
+@media (max-width: 330px) {
+#navbar { padding-left: 5px; padding-right: 3px;}
+}
+}
+#block-cook-library-bootstrap-theme-main-menu > .navbar-nav > li > a {
+ padding-right: 22px;
+ padding-left: 22px;
+ color: #000;
+}
+#block-cook-library-bootstrap-theme-main-menu > .navbar-nav > li > a:focus {
+ outline: thin dotted;
+ outline: initial;
+}
+.dropdown-menu>li>a {
+  padding: 9px 15px;
+}
+#block-mainnavigation-5 > ul > li > a {
+  text-transform: uppercase;
+  font-size: 15px;
+  color: #000;
+  letter-spacing: 0;
+}
+#block-searchbox {
+ display: inherit;
+}
+#navbar-collapse {
+  padding: 0;
+}
+#special {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+#special ul {
+  list-style-type: none;
+}
+#special ul li {
+  text-transform: none;
+  padding-bottom: 20px;
+  color: #000;
+}
+#special ul li a { width: 100%; height: 100%;}
+
+#special.UsingtheLibraries li {
+  padding-bottom: 13px;
+}
+/*
+div#navbar-collapse {
+ min-width: 300px !important;
+}
+*/
+#block-cook-library-bootstrap-theme-main-menu > ul > li.UsingtheLibraries.expanded.dropdown.open > ul {
+  width: 590%;
+}
+.navbar .menu-level1 a {
+  color: black;
+  font-size: larger;
+}
+.navbar .menu-level1 span {
+  display: block;
+  color: #666666;
+  font-size: smaller;
+}
+
+span#TULibraryCatalog:before {
+  content: 'Books, e-books, media & more, within the library.';
+}
+span#MoreLibraryCatalogs:before {
+  content: 'Books and other items within the library and at partner libraries';
+}
+span#Databases:before {
+  content: 'Articles and information by subject area';
+}
+span#JournalList:before {
+  content: 'Print and e-journals held by TU';
+}
+span#ScholarWorks\40 Towson:before {
+  content: 'Publications authored and shared by TU faculty and students';
+}
+span#CheckOut\2f Request:before {
+  content: 'Borrowing Guide';
+}
+span#InterlibraryLoan:before {
+  content: 'Borrow beyond TU and USM';
+}
+span#CourseReserves:before {
+  content: 'Course materials on hold';
+}
+span#CourseBooks:before {
+  content: 'Textbooks at our library';
+}
+span#ScholarlyResearchSupport:before {
+  content: 'Get help with research creation, publishing, and impact';
+}
+
+
+/* Header Navigation */
+#block-headernavigation > ul > li > a {
+ color: white;
+ letter-spacing: 0.05em;
+ text-rendering: optimizeLegibility;
+ text-transform: uppercase;
+ font-size: .95em;
+ line-height: 1em;
+ padding-right: 14px;
+ padding-left: 10px;
+}
+#block-headernavigation > ul > li.open > a {
+ background-color: #4d4d4d;
+}
+@media (min-width: 992px) and (max-width: 1195px) {
+#block-headernavigation > ul > li > a {
+  padding-left: 7px;
+  padding-right: 5px;
+}
+#navbar > div.row.header > div.col-md-7.navbar-header.navbar-right {
+  padding-left: 0;
+}
+}
+#block-headernavigation > ul > li > a: hover,
+#block-headernavigation > ul > li > a:focus {
+ background: none !important;
+ color: #fc0 !important;
+ -webkit-transition: color .25s ease-out;
+ -moz-transition: color .25s ease-out;
+ transition: color .25s ease-out;
+}
+.dropdown-menu>.active>a, 
+.dropdown-menu>.active>a:hover,
+.dropdown-menu>.active>a:focus {
+ background: #f5f5f5;
+}
+#block-headernavigation .AskaLibrarian.active>a,
+#block-headernavigation .SignIn.active>a,
+#block-headernavigation li[class^="Hours"].active>a { background: #444;}
+
+#todayshours {
+    white-space: nowrap;
+    padding-left: 20px;
+    font-size: 1.09em;
+    font-size: 1.5rem;
+    letter-spacing: -.01em;
+    text-transform: none;
+}
+#block-headernavigation > ul > li.SignIn.active,
+#block-headernavigation > ul > li.AskaLibrarian.active > a {background: none;}
+#block-headernavigation > ul > li.SupporttheLibrary > a:after {
+    content: "\f004";
+    font-family: FontAwesome;
+    color: #fc0;
+    padding-right: 0.5em;
+    font-size: 20px;  
+}
+#block-headernavigation > ul > li.AskaLibrarian	 > a:after {
+    content: "\f0e6";
+    font-family: FontAwesome;
+    color: #fc0;
+    font-size: 22px;
+    padding-right: 0.5em;
+    font-size: 20px;
+}
+#block-headernavigation > ul > li.Signin > a:after {
+    content: "\f090";
+    font-family: FontAwesome;
+    color: #fc0;
+    padding-right: 0.5em;
+    font-size: 20px;
+}
+#block-headernavigation > ul > li[class^="Hours"] > a {
+  display: inline-grid;
+  display: -ms-grid;
+}
+#block-headernavigation > ul > li[class^="Hours"] #title:after {
+    content: " \f017";
+    font-family: FontAwesome;
+    color: #fc0;
+    padding-right: 0.5em;
+    font-size: 22px;
+}
+span[id^="Hours"] {
+    text-transform: none;
+    letter-spacing: 0;
+    padding-top: 10px;
+}
+span#Chat:before {
+  content: 'Get help via chat from a human';
+}
+span#Email:before {
+  content: 'Get answers to non-urgent questions and comments';
+}
+#block-cook-library-bootstrap-theme-main-menu .navbar-nav li[class^="Hours"] a,
+#block-cook-library-bootstrap-theme-main-menu .navbar-nav li.Signin a,
+#block-cook-library-bootstrap-theme-main-menu .navbar-nav li.SupporttheLibrary a,
+#block-cook-library-bootstrap-theme-main-menu .navbar-nav li.AskaLibrarian a {
+  text-transform: uppercase;
+  font-size: 15px;
+
+}
+
+#block-cook-library-bootstrap-theme-main-menu > .navbar-nav > li[class^="Hours"] > a:before {
+    content: " \f017";
+    font-family: FontAwesome;
+    padding-right: 0.5em;
+    font-size: 20px;
+}
+#block-cook-library-bootstrap-theme-main-menu > .navbar-nav > li.AskaLibrarian > a:before {
+    content: "\f0e6";
+    font-family: FontAwesome;
+    padding-right: 0.5em;
+    font-size: 20px;
+}
+#block-cook-library-bootstrap-theme-main-menu > .navbar-nav > li.Signin > a:before {
+    content: "\f090";
+    font-family: FontAwesome;
+    padding-right: 0.5em;
+    font-size: 20px;
+}
+#block-cook-library-bootstrap-theme-main-menu > .navbar-nav > li.SupporttheLibrary > a:before {
+    content: "\f004";
+    font-family: FontAwesome;
+    padding-right: 0.5em;
+    font-size: 18px;
+}
+#block-headernavigation > ul > li[class^="Hours"] > a {
+    display: inline-grid;
+}
+	
+

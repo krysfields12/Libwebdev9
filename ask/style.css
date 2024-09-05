@@ -1,0 +1,58 @@
+body {
+background-color: #e6e6e6;
+}
+div {
+  padding-left: 14px;
+}
+h1, h2, h3, h4, h5, p, li {
+  font-family: proxima-nova, sans-serif;
+}
+h1:before {
+  width: 150px;
+  height: 6px;
+  border-top: 6px solid #fb0;
+  content: '';
+  display: block;
+  margin-bottom: 15px;
+}
+h1 {
+ font-weight: 700;
+ line-height: 1.2;
+}
+p {
+  font-color: #4c4c4c;
+  font-size: 18px;
+  letter-spacing: 0;
+}
+.survey a {
+ padding: 15px;
+ background-color: #fb0;
+ font-weight: 300;
+ text-align: center;
+}
+ol.breadcroomb {
+  margin: 15px 0 30px;
+  padding-left: 0px;
+  list-style: none;
+  letter-spacing: 0.16em;
+  line-height: 1.6em;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #666;
+}
+ol.breadcroomb li {
+  display: inline;
+  font-size: 18px;
+}
+.breadcroomb li:last-of-type {
+  font-weight: bold;
+}
+.breadcroomb > li + li:before {
+  padding: 0 5px;
+  color: #cccccc;
+  content: "/\00a0";
+}
+a {
+ color: #000;
+ font-weight: bold;
+}

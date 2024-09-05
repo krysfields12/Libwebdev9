@@ -1,0 +1,327 @@
+**
+ * Place your custom styles here.
+ */
+body {
+  margin-top: 0;
+  font-family: proxima-nova, sans-serif !important;
+}
+@media screen and (min-width: 768px) {
+body {
+    margin-top: 0 !important;
+  font-family: proxima-nova, sans-serif !important;
+}
+}
+header, #block-hours {
+  font-family: proxima-nova, sans-serif;
+}
+p.intro-text, .node-id-89 p {font-size: 1.4em; line-height: 2em;}
+a {
+color: #524fa8;
+}
+a:hover, a:focus {
+color: #033f7b;
+}
+.alert-success {background: #0CCB24;}
+.header.row {
+ background: #151500;
+ height: 100px;
+}
+body > div > div > section {margin-left: 26px;}
+/* Alert/Announcement Region */
+.alert {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+#block-views-block-announcement-block-1 {text-align: center; font-weight: bold; margin-left: none!important;}
+#block-views-block-announcement-block-1 {margin-left: 0;}
+#block-views-block-announcement-block-1 a {
+  text-decoration: underline;
+}
+/*body > .alert .close {color: #151500;}*/
+/* Logo / Site Name */
+#navbar a.name.navbar-brand {
+ padding: 35px 0;
+ font-size: 26px;
+ font-family: proxima-nova, sans-serif;
+  color: #fff;
+}
+.logo img {height: 72px;}
+a.logo {
+  padding: 0!important;
+  margin-right: 0!important;
+  margin-top: 11px
+}
+#navbar {
+  clear: both;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  z-index: 1;
+}
+#navbar .navbar-right {
+  max-height: 84px;
+  margin-right: 0 !important;
+  padding-right: 0 !important;
+}
+#navbar .navbar-right > div {
+  float: right;
+  min-width: 705px;
+}
+@media all and (min-width: 992px) and (max-width: 1037px) {
+ #navbar a.name.navbar-brand {font-size: 24px;}
+}
+
+@media all and (min-width: 992px) {
+#navbar-collapse,
+#block-cook-library-bootstrap-theme-main-menu,
+#block-searchbox {padding: 0;}
+
+#block-searchbox form {
+  display: flex;
+  /*float: right;*/
+  margin-right: 0;
+  /*padding-right: 15px;*/
+
+}
+
+#navbar .navbar-right {padding-right: 0;}
+}
+#block-headernavigation > ul > li {
+  display: inline-block;
+}
+@media all and (min-width: 992px) {
+#navbar-collapse {
+  background: #fb0;
+}
+}
+#block-cook-library-bootstrap-theme-main-menu {
+  max-width: 743px;
+}
+#block-searchbox {
+  min-width: 250px;
+  float: right;
+}
+.navbar-collapse (padding: 0;)
+
+#block-hours {padding: 15px 0 !important;}
+.main-container {
+  margin-top: 20px;
+  min-height: 400px;
+}
+/* Button styles */
+.btn,
+.btn-info,
+.btn-primary {
+  box-shadow: none !important;
+  margin-bottom: 5px;
+}
+
+.btn-tu-gold,
+.microsite .field--name-field-action-links a {
+  background-color: #fb0 !important;
+  color: black;
+  padding: 11px;
+  font-weight: bold;
+  box-shadow; none !important;
+  background-image: none !important;
+  margin-right: 15px;
+}
+.btn-tu-gold:active,
+.btn-tu-gold:focus,
+.btn-tu-gold:hover,
+.microsite .field--name-field-action-links a:active,
+.microsite .field--name-field-action-links a:focus,
+.microsite .field--name-field-action-links a:hover {
+  background-image: none !important;
+  background-color: #000 !important;
+  color: white !important;
+  box-shadow: none;
+  margin-right: 15px;
+}
+
+.badge {
+  background-color: #3C3C3C;
+}
+.cook-onesearch-view {
+  background: none;
+  text-align: center;
+}
+.view table caption {
+  color: #151500;
+}
+#ebscohostsearchtext {
+  color: white;
+}
+.visually-hidden, .sr-only {background: #fff; color: #151500;}
+.views-row.row {margin-top: 10px; margin-bottom: 30px;}
+.no-h-padding { padding-right: 0; padding-left: 0;}
+@media all and (min-width:  992px) {
+#block-cook-library-bootstrap-theme-search input,
+.site-search-box input {
+  background: #f8f8f8;
+  padding-left: 15px;
+  font-style:italic;
+  height: 64px;
+  width: 188px;
+}
+#search-block-form > .form-item.form-type-search.form-item-keys.form-group > div > span > button,
+#block-searchbox button {
+  height: 64px;
+  color: #151500;
+  background-color: #f8f8f8;
+  border-radius: 0;
+  border: 3px solid #f8f8f8;
+  box-shadow: none; 
+  -webkit-box-shadow: none;
+  margin-bottom: 0;
+}
+#search-block-form .form-item.form-group > div > span {
+#block-searchbox input {
+ height: 64px;
+}
+#search-block-form #edit-keys, #search-block-form #edit-keys--2 {height: 64px;}
+#search-block-form .input-group {
+  height: 64px;
+  margin-bottom: 0;
+}
+#search-block-form .form-group {height: 100%;}
+#search-block-form { height: 65px;}
+}
+.select-wrapper {border: 1px solid lightgray !important; padding-left: 10px;}
+table:not([class^="gsc"]) {
+ border: 1px solid #e6e6e6;
+ border-top: 6px solid #fb0;
+ margin: 40px 0;
+}
+
+table thead th,
+table tbody tr {
+}
+
+table:not([class^="gsc"]) thead th,
+table:not([class^="gsc"]) tbody td {
+  font-family: proxima-nova, serif;
+  text-align: left;
+  font-size: 1.2em;
+  border: 1px solid #e6e6e6;
+ padding: 14px;
+}
+
+table th {
+ text-transform: uppercase;
+}
+
+table tbody td a {
+  font-weight: bold;
+}
+
+/*Landing page styles*/
+.field--name-field-intro {
+    font-family: proxima-nova, sans-serif;
+    font-size: 1.80em;
+    letter-spacing: -1px;
+}
+.page-title {
+ margin-top: 40px;
+ padding-left: 0;
+ margin-left: 15px;
+ text-align: center;
+}
+.subnavigation,
+.related-links {
+max-width: 340px;
+}
+#subnavigation-control {
+  background-color: #151500;
+  border-color: #e6e6e6;
+  font-family: proxima-nova, sans-serif;
+  color: #fff;
+  padding: 13px 25px 16px 40px;
+  text-transform: uppercase;
+  margin: 12px;
+  width: 340px;
+  border-radius: 0;
+  text-align: left;
+  font-size: 1.2em;
+}
+#subnavigation-control:hover, #subnavigation-control:active:hover {
+background-color: #555;
+}
+#subnavigation-control:active:hover, #subnavigation-control.active:hover, #subnavigation-control:active:focus, #subnavigation-control.active:focus, #subnavigation-control:active.focus, #subnavigation-control.active.focus {
+background-color: #333;
+}
+#subnavigation-control .fa {
+  color: #fb0;
+  margin-right: 8px;
+}
+/* Related Links */
+#block-baltimorehebrewinstitutespecialcollectionsrelatedlinks-menu {
+
+}
+@media (min-width: 768px) {
+ .collapse.dont-collapse-sm {
+    display: block;
+    height: auto !important;
+    visibility: visible;
+  }
+
+}
+#nav-row {
+  width: 100%;
+}
+/*M*/
+/* Policy or Official Document */
+.policy-or-official-document p {
+  font-family:proxima-nova, sans-serif;
+  font-size: 1.01em;
+}
+.policy-or-official-document h2 {
+  font-family: proxima-nova, sans-serif;
+  font-size: 1.2em;
+  letter-spacing: -.5px;
+  font-weight: bold;
+  color: #151500;
+}
+.policy-or-official-document h2 a,
+.policy-or-official-document h2 a:active,
+.policy-or-official-document h2 a:visited,
+.policy-or-official-document h2 a:hover {
+  color: #151500;
+  cursor: default;
+  text-decoration: none;
+}
+.policy-or-official-document h3 {
+  font-size: 0.9em;
+  color: #666;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: -.5px;
+  font-family: proxima-nova, sans-serif;
+}
+.policy-or-official-document h4 {
+  font-size: 0.9em;
+  color: #666;
+  text-decoration: underline;
+  font-family: inherit;
+}
+.field--type-datetime {
+  margin-top: 20px;
+  padding: 5px;
+  background-color: #f9f9f9;
+}
+
+.field--name-field-hero-image {
+ margin-left: -80px;
+}
+
+.ils-migration .views-row .views-field-name {
+    font-size: 30px; /* Adjust the font size as needed */
+    font-weight: bold;
+    margin-bottom: 20px; /* Adjust the space between the name and other elements */
+}
+
+
+.ils-migration img {
+ border-radius: 10px;
+}
+

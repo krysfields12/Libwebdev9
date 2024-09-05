@@ -1,0 +1,101 @@
+
+global-styling:
+  css:
+    theme:
+      css/style.css: {}
+      css/menu.css: {}
+      css/frontpage.css: {}
+      css/page.css: {}
+      css/views.css: {}
+      css/flickity.css: {}
+      css/breakpoint-hack.css: {}
+      css/landing-pages.css: {}
+      css/google-cse-results.css: {}
+      css/print.css: {}
+
+site-search:
+   js:
+     js/search-this-site.js: {}
+
+google-cse:
+   js:
+     js/google-cse.js: {}
+
+background-image-toggle:
+  js:
+     js/background-image-toggle.js: {}
+
+bhi-search:
+  js:
+     js/bhi-search.js: {}
+
+flickity-accessible:
+  js:
+     js/flickity-accessible.js: {}
+
+hours:
+  js:
+     js/hours-header.js: {}
+     js/hours-by-department.js: {}
+  dependencies:
+    - core/jquery
+
+events-and-classes:
+  js:
+     js/events.js: {preprocess: false}
+     js/classes.js: {preprocess: false}
+  dependencies:
+    - core/jquery
+
+onesearch-popover:
+  js:
+     js/onesearch-popover.js: {}
+  dependencies:
+    - core/jquery
+
+occupancy:
+  js:
+    js/occupancy-banner.js: {}
+  dependencies:
+    - core/jquery
+
+font-awesome:
+  remote: https://fontawesome.github.io/Font-Awesome/
+  version: 4.5.0
+  license:
+    name: MIT
+    url: https://fontawesome.github.io/Font-Awesome/license/
+    gpl-compatible: true
+  css:
+    theme:
+      https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css: { type: external, minified: true }
+
+fonts:
+  css:
+    theme:
+      '//fonts.googleapis.com/css?family=Roboto|Source+Serif+Pro|Cairo|Open+Sans': { type: external, minified: true }
+
+tu-web-fonts:
+  css:
+    theme:
+      '//fast.fonts.net/cssapi/184aed02-7db1-4508-b043-f1cde6c6224c.css': { type: external, minified: true }
+
+chat-slider:
+  css:
+    theme:
+      css/chat-slider.css: {}
+
+  js:
+    js/chat-slider.js: {}
+
+tu-proxima-nova:
+  css:
+    theme:
+      '//use.typekit.net/skr3kgt.css': { type: external, minified: true }
+
+libguides:
+  js:
+    js/libguides.js: {}
+  css: 
+    theme:
+      css/inception.css: {}

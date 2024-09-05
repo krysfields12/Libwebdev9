@@ -1,0 +1,28 @@
+.inception {
+  margin-bottom: 3%;
+}
+.inception #ourData {
+ display: none;
+}
+.inception .section-label {
+  font-family: proxima-nova,sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  font-style: normal;
+  color: #666;
+  line-height: 1;
+  letter-spacing: .16em;
+  margin: 15px 0 30px;
+  text-transform: uppercase;
+}
+.inception a.btn.btn-primary {
+  margin: 0 0 2% 0;
+}
+.inception a.btn.btn-primary:first-of-type {
+  margin: 4% 0 2% 0;
+}
+
+.inception .view-department-representatives .view-footer {
+ margin-top: 2%;
+}
+

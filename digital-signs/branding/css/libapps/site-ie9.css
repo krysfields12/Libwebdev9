@@ -1,0 +1,160 @@
+/*! 
+ * Towson v0.0.1 [2019-04-16] 
+ * Towson University Website Redesign Files 
+ * Fastspot 
+ */
+.proxima_extra_black {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+.proxima_bold {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.proxima_light {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.proxima_italic {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+.proxima_bold_italic {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+.proxima_extra_cond_light_italic {
+    font-family: proxima-nova-extra-condensed, sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+.proxima_extra_cond_thin_italic {
+    font-family: proxima-nova-extra-condensed, sans-serif;
+    font-weight: 200;
+    font-style: italic;
+}
+.frutiger_extra_black {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+.frutiger_condensed_bold {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.frutiger_light {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.sabon {
+    font-family: linotype-sabon, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.sabon_italic {
+    font-family: linotype-sabon, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+.sabon_bold {
+    font-family: linotype-sabon, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.sabon_bold_italic {
+    font-family: linotype-sabon, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+.ellipsis {
+    display: block;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.backface_visibility {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.text_shadow {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+.box_shadow {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+}
+.bg_black {
+    background-color: #000;
+}
+.bg_tu_gray {
+    background-color: #3c3c3c;
+}
+.bg_black_50 {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.bg_black_60 {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.bg_black_70 {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.bg_black_80 {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.bg_black_90 {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.bg_white {
+    background-color: #fff;
+}
+.bg_white_50 {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.bg_white_60 {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.bg_white_70 {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.bg_white_80 {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.bg_gold {
+    background-color: #fb0;
+}
+.bg_gold_80 {
+    background-color: rgba(255, 187, 0, 0.8);
+}
+.bg_gray_pale {
+    background-color: #f8f8f8;
+}
+.bg_gray_tin {
+    background-color: #505050;
+}
+.bg_gray_light {
+    background-color: #e6e6e6;
+}
+.bg_gray_thunder {
+    background-color: #4c4c4c;
+}
+.bg_gray_thunder_80 {
+    background-color: rgba(76, 76, 76, 0.8);
+}
+.bg_gray_middle {
+    background-color: #979797;
+}
+.color_white {
+    color: #fff;
+}
+.scroller-bar,
+.scroller-handle,
+.scroller-track {
+    width: 20px;
+    border-radius: 0;
+}

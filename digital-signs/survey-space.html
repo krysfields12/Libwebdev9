@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Space Study - for iPads</title>
+<!-- Fonts -->
+<link rel="stylesheet" href="https://use.typekit.net/skr3kgt.css">
+
+<style>
+body {
+  margin: 25px 0;
+  background-color: #b7b7b7;
+  background-image: url("Library_20170622_KT_0064_2.png");
+  text-align: center;
+  font-family: proxima-nova, sans-serif;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (orientation: landscape) {
+  body {
+    background-position: 0% 19%;
+    background-repeat: no-repeat;
+    background-size: 156%;
+  }
+}
+@media (orientation: portrait) {
+  body {
+    background-position: 2% 20%;
+    background-repeat: no-repeat;
+    background-size: 265%;
+  }
+}
+h1 {
+  font-family: proxima-nova, sans-serif;
+  font-size: 4em;
+}
+h1 span {
+ background-color: #fff;
+}
+.container {
+  position: absolute;
+  bottom: -256px;  
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(rgba(0,0,0,0.5),black);
+  width: 1025px;
+}
+#button {
+  background-color: #fb0;
+  color: #000;
+  text-decoration: none;
+  height: 50px;
+  width: 29%;
+  padding: 2%;
+  display: inline-block;
+  margin: 15px 0 83px 0;
+  font-size: 2.3em;
+  font-weight: bold;
+  -webkit-animation: pulse 1.5s infinite;
+}
+#button:hover {
+  -webkit-animation: none;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    width: 20%;
+  }
+  70% {
+    width: 35%;
+    box-shadow: 0 0 50px 4px #fff;
+  }
+  100% {
+    width: 20%;
+    box-shadow: 0 0 0 0 #fff;
+  }
+}
+.container::before {
+  -webkit-filter: url('#blur');
+ filter: url('#blur');
+ -webkit-filter: blur(5px);
+ filter: blur(5px);
+ background-size: cover;
+}
+.glass {
+ opacity: 1;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="glass">
+<h1><span>Hey Tigers!<br/>Tell us about your visit today</span></h1>
+<a id="button" href="https://forms.office.com/Pages/ResponsePage.aspx?id=knP5y_ZJ3Umophn3EO_MNVUfuO1T4fdHkglqtcEdwmhUQ0xBODRSRlM3SUZRSVgyQ0QyRUU2SzRWVC4u">Start</a>
+</div>
+</div>
+</body>
+</html>

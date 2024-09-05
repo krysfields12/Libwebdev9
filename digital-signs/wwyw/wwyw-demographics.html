@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Demographic Form - for iPads in Portrait Orientation</title>
+<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+<style>
+body {
+  margin: 25px 0;
+  background-color: #b7b7b7;
+  background-image: url("images/wwyw-lineart.png"), url("images/wwyw-background.jpg");
+  text-align: center;
+  font-family: 'Muli', sans-serif;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (orientation: portrait) {
+  body {
+    background-position: 77% 3%, 50% 50%;
+    background-repeat: no-repeat, repeat;
+    background-size: 284%, 100%;
+  }
+}
+h1 {
+  font-family: 'Muli', serif;
+  font-size: 4.5em;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255,255,255,0.5);
+}
+
+#button {
+  background-color: #008B8B;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #008B8B;
+  height: 50px;
+  width: 29%;
+  padding: 4%;
+  display: inline-block;
+  margin: 15px 0 45px 0;
+  border-radius: 4px;
+  font-size: 2.3em;
+  text-shadow: 0 0 5px #000;
+}
+.container::before {
+  -webkit-filter: url('#blur');
+ filter: url('#blur');
+ -webkit-filter: blur(5px);
+ filter: blur(5px);
+ background-size: cover;
+}
+.glass {
+ opacity: 1;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="glass">
+<h1>Before you view</h1>
+<h2>Help us by answering 2 questions</h2>
+<a id="button" href="https://docs.google.com/forms/d/e/1FAIpQLSeSCIGBN44Ln8U-drVQMadrymnEoFU7jmvQ_7q6X2pfOphEqg/viewform?usp=sf_link">Okay</a>
+</div>
+</div>
+
+<div style="position: absolute; right: 80%; bottom: 80%; background-image: url(images/wwyw-lineart.png); width: 400px; height: 400px;">
+</div>
+</body>
+</html>

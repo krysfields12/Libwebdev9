@@ -1,0 +1,682 @@
+div.intro-class {
+margin-top: 20px;
+margin-bottom: 30px;
+padding-left: 0;
+}
+.intro-class .intro-text {
+font-size: 19px;
+text-align: left;
+}
+div.intro-class h2 {
+margin-top: 22px;
+}
+@media only screen and (max-width: 989px) {
+#background-image {padding-left: 14px; padding-right: 14px;}
+}
+#background-image {
+min-height: 312px;
+margin-left: -15px;
+margin-right: -15px;
+background-size: cover;
+background-position: center 55%;
+background-color: #444 !important;
+text-align: left;
+}
+#background-image form input {
+font-size: 28px;
+padding: 39px 110px 39px 30px;
+background-color: rgba(255,255,255,.7);
+border: none;
+}
+#background-image form input::placeholder {
+  color: #4c4c4c;
+}
+#background-image form input:placeholder-shown {
+ /* color: #000;*/
+}
+#background-image form button {
+padding: 28px 20px 28px 20px;
+vertical-align: middle;
+}
+
+.landing-page div.content div {
+margin: 0;
+}
+/* Submenu */
+h2#block-universityarchives-menu:after,
+.subnavigation h2:after {
+  width: 40px;
+  height: 4px;
+  background-color: #000;
+  display: block;
+  content: '';
+  margin-top: 15px;
+}
+
+h2#block-universityarchives-menu,
+#subnavigation h2 {
+  background-color: #fc0;
+  color: #000;
+  display: block;
+  line-height: 1.6;
+  padding: 25px 40px;
+  text-transform: uppercase;
+  font-family: proxima-nova, sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+#block-universityarchives > ul > li > a,
+.subnavigation ul li a {
+  background-color: #fc0;
+  display: block;
+  line-height: 1.4;
+  padding: 20px 40px;
+  color: black;
+  font-family: proxima-nova, sans-serif;
+  font-size: 1.25em;
+}
+#block-universityarchives > ul > li > a:hover,
+.subnavigation ul li a:hover {
+  background-color: #efefef;
+}
+/* Related Links */
+
+nav[id$="relatedlinks"] {
+  border: 1px solid #e6e6e6;
+  margin-bottom: 40px;
+  margin-top: 50px;
+  width: 340px;
+}
+h2[id$="relatedlinks-menu"] {
+  padding: 18px 40px 18px;
+  margin: none;
+  font-family: proxima-nova, sans-serif !important;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+nav[id$="relatedlinks"] ul li a {
+  padding: 18px 40px;
+  font-family: proxima-nova, sans-serif;
+  font-size: 18px;
+  border-top: 1px solid #e6e6e6;
+  color: #000;
+}
+/* Featured Item */
+section[id^="block-views-block-featured-item"] ul,
+#block-views-block-featured-item-scua ul,
+.featured-item-container {
+padding: 0;
+margin-top: 20px;
+}
+section[id^="block-views-block-featured-item"],
+#block-views-block-featured-item-scua,
+.meet-the-dean {
+ max-width: 1100px;
+ margin: auto;
+}
+@media screen and (min-width: 768px) {
+ section[id^="block-views-block-featured-item"] img,
+ #block-views-block-featured-item-scua img,
+ .cook-callout-subtle img
+ {
+  padding-right: 30px;
+  padding-left: 0;
+  float: left;
+ }
+ section[id^="block-views-block-featured-item"] .feature-right img {
+  float: right;
+  padding-right: 0;
+  padding-left: 30px;
+ }
+ .feature-right .featured-item-content {
+  padding: 20px;
+  }
+}
+@media screen and (max-width: 991px) {
+section[id^="block-views-block-featured-item"] img,
+ #block-views-block-featured-item-scua img,
+.cook-callout-subtle img {
+  width: auto;
+  margin: auto;
+ }
+ section[id^="block-views-block-featured-item"] p,
+ #block-views-block-featured-item-scua p,
+ .cook-callout-subtle img {
+  font-size: 1.2em;
+ }
+ h2 {
+  font-size: 24px;
+ }
+}
+section[id^="block-views-block-featured-item"],
+#block-views-block-featured-item-scua { 
+padding: 0;
+max-width: 1100px;
+margin: auto;
+}
+section#block-views-block-featured-item-block-4 {
+max-width: none;
+}
+.container-fluid.row.featured-item-container {
+background-color: #000;
+padding: 0;
+color: #bbb;
+}
+section[id^="block-views-block-featured-item"] h2,
+#block-views-block-featured-item-scua h2 {
+  margin-top: 0;
+  padding-top: 23px;
+  padding-left: 5px;
+  font-family: proxima-nova, sans-serif;
+ color: white;
+}
+section#block-views-block-featured-item-block-4 h2 {
+color: black;
+}
+/*
+#block-views-block-featured-item-scua h2 a, 
+#block-views-block-featured-item-scua h2 a:active,
+#block-views-block-featured-item-scua h2 a:visited,
+#block-views-block-featured-item-scua h2 a:hover {
+ color: white;}
+*/
+section[id^="block-views-block-featured-item"] a.btn,
+#block-views-block-featured-item-scua  a.btn {
+float: right;
+margin-right: 5%;
+margin-bottom: 23px;
+font-family: proxima-nova, sans-serif;
+background-color: #fc0;
+color: #000;
+padding: 15px 45px;
+border-radius: 0;
+}
+section[id^="block-views-block-featured-item"] p,
+#block-views-block-featured-item-scua  p {
+padding: 10px 10px 10px;
+font-family: proxima-nova, sans-serif;
+font-size: 1.3em;
+color: #ccc;
+}
+.meet-scua-item {
+  border: none;
+  margin-bottom: 20px;
+}
+.meet-scua-item h4 {
+  font-family: proxima-nova, sans-serif !important;
+}
+.ask-me {
+  padding-top: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+section#block-views-block-featured-item-block-4 p {
+ color: black;
+}
+section[id^="block-views-block-featured-item"] ul,
+#block-views-block-featured-item-scua  ul {
+list-style: none;
+}
+.collecting-areas ul.row{
+padding-left: 5px;
+list-style: none;
+}
+
+.scholarly-research ul.row {
+ padding-left: 5px;
+ list-style: none;
+}
+
+.collecting-areas ul li .views-field-name {
+ font-family: proxima-nova, sans-serif;
+ font-size: 1.4em;
+ color: black;
+ padding-top: 4px;
+}
+
+.scholarly-research ul li .views-field-name {
+ font-family: proxima-nova. sans-serif;
+ font-size: 1.4em;
+ color: black;
+ padding-top: 4px;	
+}
+
+.collecting-areas .views-field-description__value p {
+ font-family: proxima-nova, sans-serif;
+ font-size: 1.4em;
+}
+
+.scholarly-research .views-field-description__value p {
+ font-family: proxima-nova, sans-serif;
+ font-size: 1.4em;
+}
+
+.collecting-areas .taxonomy-term {
+margin-bottom: 44px;
+}
+
+.scholarly-research .taxonomy-tern {
+ margin-bottom: 44px;
+}
+
+@media screen and (min-width: 992px) {
+.collecting-areas ul li {
+ width: 17.66667%;
+ margin-right: 2.2%;
+ }
+}
+
+@media screen and (min-width: 992px) {
+ .scholarly-research ul li {
+  width: 17.66667%;
+  margin-right: 2.2%;
+ }
+}
+
+.landing-page h2 {
+  font-family: proxima-nova, sans-serif;
+  letter-spacing: -.03em;
+}
+/*Events block*/
+#block-libcalscuaevents div.container {
+width:100%;
+}
+.scua-events #api_upc_cid7130_iid3393 ul {
+  display: inline-flex;
+  padding-top: 30px;
+}
+.scua-events #api_upc_cid7130_iid3393 ul li {
+  list-style: none;
+  width: 25%;
+  padding: 2px;
+  display: block;
+  margin-right: 20px;
+}
+/*Temporary*/
+.scua-events #api_upc_cid7130_iid3393 ul li a {
+  font-family: proxima-nova, sans-serif;
+  font-size: 2.2em;
+  line-height: 0.8em;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+  color: black;
+  
+}
+.scua-events #api_upc_cid7130_iid3393 ul li:before {
+  width: 150px;
+  height: 6px;
+  border-top: 6px solid #fc0;
+  content: '';
+  display: block;
+  margin-bottom: 15px;
+}
+.scua-events span.s-lc-ea-date {
+    font-family: proxima-nova, sans-serif;
+    font-size: 1.2em;
+}
+@media screen and (max-width: 881px) {
+.scua-events #api_upc_cid7130_iid3393 ul {
+  display: initial;
+}
+.scua-events #api_upc_cid7130_iid3393 ul li {
+  width: 80%;
+  padding-bottom: 40px;
+}
+}
+.scua-events #api_upc_cid7130_iid3393 > h3 {
+ font-size: 3em;
+}
+/* Hero Image Call Outs */
+/*.callout-container {
+ max-width: 1310px;
+ margin: 0 auto;
+ margin-top: 5px;
+ margin-bottom: 30px;
+}
+*/
+.container.bhi {
+  width: 100%;
+  padding: 0 5%;
+  text-align: left;
+}
+.row.callout-container {
+ padding-top: 50px;
+ padding-bottom: 20px;
+}
+.callout-content--rewrite {
+ padding: 40px 20px;
+ background-color: #fc0; 
+ transition: 0.4s;
+}
+.callout-content {
+ margin-bottom: 20px;
+}
+.callout-content--rewrite p.description {
+ font-family: proxima-nova, serif;
+ font-size: 18px;
+}
+.callout-content--rewrite h2 {
+ font-family: proxima-nova, sans-serif;
+ font-size: 1.6em;
+ font-weight: bold;
+ letter-spacing: -.5px;
+}
+.callout-content--rewrite h2:after {
+  width: 50px;
+  height: 4px;
+  content: '';
+  display: block;
+  margin: 15px 0 20px;
+  background-color: #786004;
+}
+.callout-container a {
+ color: #000;
+}
+.callout-container a:focus,
+.callout-container a:hover, 
+.callout-container a:active {
+  text-decoration: none !important;
+}
+.callout-content--rewrite:hover {
+  background-color: rgba(255,204,0,.8);
+}
+.jumbo-dropdown {
+  background: white;
+  height: 76px;
+  padding: 25px !important;
+  margin-top: 2px 0 0 0 !important;
+  appearance: initial !important;
+  -webkit-appearance: initial !important;
+    -moz-appearance: initial !important;
+}
+.jumbo-dropdown:after {
+    content: '\f078' !important;
+    font-family: "FontAwesome" !important;
+    color: #000;
+    right: 11px;
+    top: 6px;
+    height: 34px;
+    padding: 15px 0px 0px 8px;
+    border-left: 1px solid #0ebeff;
+    position: absolute;
+    pointer-events: none;
+}
+.jumbo-dropdown option {
+line-height: 150%;
+}
+.jumbo-form {
+  width:100% !important;
+}
+#bhisearch input[type=text] {
+ width: 67% !important;
+}
+/* BHI Page callouts, no image */
+.conainer.bhi .callout-container {
+  padding-bottom: 10px;
+}
+/*Black callout*/
+.bhi .callout-content:first-of-type .callout-content--rewrite {
+  background-color: black;
+  color: white;
+}
+.bhi .callout-content:first-of-type .callout-content--rewrite h2 {
+  color: #fff;
+}
+.bhi .callout-content:first-of-type .callout-content--rewrite:hover {
+  background-color: rgba(0,0,0,.8);
+}
+/*Gray callout */
+.bhi .callout-content:nth-of-type(3) .callout-content--rewrite h2 {
+  color: #fff;
+}
+.bhi .callout-content:nth-of-type(3) .callout-content--rewrite {
+  background-color: #444;
+  color: #fff;
+}
+.bhi .callout-content:nth-of-type(3) .callout-content--rewrite:hover {
+  background-color: rgba(68,68,68,.8);
+}
+/* Initiative pages */
+.initiative section {
+  height: 380px;
+  padding: 0;
+}
+.initiative section p.statement {
+  padding-top: 8px;
+  padding-left: 20px;
+  font-size: 2em;
+  font-family: proxima-nova, sans-serif;
+  color: white;
+  background-color: rgba(0,0,0,.5);
+  position: absolute;
+  bottom: 0;
+}
+.initiative p.statement a:hover,
+.initiative p.statement a:active,
+.initiative p.statement a {
+  color: white;
+  text-decoration: underline;
+}
+@media only screen and (min-width: 1080px) {
+  .initiative section p.statement {
+    margin-top: 264px;
+    font-size: 3em;
+    line-height: 1.5em;
+    padding-top: 4px;
+    padding-bottom: 20px;
+  }
+}
+.initiative section div.statement-container {
+  background-color: rgba(0,0,0,.5);
+}
+
+.initiative-one section {
+  background: url(/sites/default/files/manu-promo-photos/Library_20170622_KT_0336_2.JPG);
+  background-size: cover;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+.initiative-two section {
+  background: url(/sites/default/files/manu-promo-photos/Library_20170622_KT_0220_2.JPG);
+  background-size: cover;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+.initiative-three section {
+  background: url(/sites/default/files/manu-promo-photos/Archive_20180226_KT_0149_1.png);
+  background-size: cover;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+.initiative-four section {
+  background: url(/sites/default/files/manu-promo-photos/Library_20170622_KT_0023_2.jpg);
+  background-size: cover;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
+.initiative-10 section {
+  background: url(/sites/default/files/manu-promo-photos/top-ten-10.png);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+.initiative-09 section {
+  background: url(/sites/default/files/manu-promo-photos/top-ten-09.png);
+  background-size: cover;
+  background-position: 57% 60%;
+  background-repeat: no-repeat;
+}
+
+.initiative-08 section {
+  background: url(/sites/default/files/manu-promo-photos/top-ten-08.png);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+.initiative-07 section {
+  background: url(/sites/default/files/manu-promo-photos/top-ten-07.png);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+.initiative-06 section {
+  background: url(/sites/default/files/manu-promo-photos/top-ten-06.png);
+  background-size: cover;
+  background-position: bottom left;
+  background-repeat: no-repeat;
+}
+.initiative-05 section {
+  background: url(/sites/default/files/manu-promo-photos/top-ten-05.png);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+.initiative-04 section {
+  background: url(/sites/default/files/manu-promo-photos/top-ten-04.png);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+.initiative-03 section {
+  background: url(/sites/default/files/manu-promo-photos/top-ten-03-new.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.initiative-02 section {
+  background: url(/sites/default/files/manu-promo-photos/top-ten-02-new.jpg);
+  background-size: cover;
+  background-position: bottom left;
+  background-repeat: no-repeat;
+}
+.initiative-01 section {
+  background: url(/sites/default/files/manu-promo-photos/top-ten-01.png);
+  background-size: cover;
+  background-position: 60% 24%;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 1080px) {
+  .initiative section {
+    background-position: 50% 50%;
+  }
+}
+.meet-the-dean {
+  border: 1px solid #e6e6e6;
+  margin-bottom: 60px;
+  margin-top: 60px;
+  height: 220px;
+}
+.meet-the-dean figure {
+  float: left;
+  margin-right: 60px;
+  margin-left: 0;
+  position: relative;
+}
+.meet-the-dean figcaption {
+  line-height: 1.3em;
+  text-rendering: optimizeLegibility;
+  text-transform: uppercase;
+  width: 426px;
+  height: 40px;
+  position: absolute;
+  top: 191px;
+  left: 413px;
+  background-color: #fc0;
+  display: block;
+  padding: 11px 12px 13px;
+  text-align: center;
+  z-index: 1;
+  color: black;
+}
+.meet-the-dean span {
+  position: absolute;
+  left: 238px;
+  font-size: 1.8em;
+  font-weight: 500;
+  font-family: proxima-nova, sans-serif;
+}
+.meet-the-dean p {
+  font-size: 1.7em;
+  line-height: 1.6em;
+  font-family: proxima-nova, sans-erif;
+  position: relative;
+  color: #4c4c4c;
+  margin: 0;
+  padding: 15px;
+  padding-top: 25px;
+  font-style: italic;
+}
+/*As implemented on For Faculty page */ .cook-callout-subtle {
+  border: 1px solid #e6e6e6;
+  margin-bottom: 35px;
+}
+.cook-callout-subtle h2, .cook-callout-subtle p, .cook-callout-subtle a 
+{
+  font-family: proxima-nova, sans-serif;
+}
+.cook-callout-subtle-links {
+  font-size: 1.15em;
+}
+.cook-callout-subtle h2 {
+  font-weight: 700;
+  color: #000;
+  text-rendering: optimizeLegibility;
+}
+.cook-callout-subtle p {
+  font-size: 1.5em;
+  margin-bottom: 1.25em;
+}
+.cook-callout-subtle li {
+  list-style: square;
+  padding: 9px 15px;
+  font-size: 1.5rem;
+}
+.cook-callout-subtle h2 {
+}
+.cook-callout-subtle h2:after {
+  width: 40px;
+  height: 4px;
+  background-color: #3c3c3c;
+  content: '';
+  display:block;
+  margin-top: 15px;
+}
+.cook-callout-subtle-content {
+  padding-bottom: 20px;
+}
+.cook-callout-subtle-media {
+  padding: 0 !important;
+}
+.cook-callout-subtle-media img {
+    width: 325px;
+    height: 325px;
+    object-fit: cover;
+}
+#block-faculty-menu {
+  margin-bottom: 35px;
+}
+.row-no-padding {
+  padding: none;
+}
+
+.microsite .page-title {
+  text-align: center;
+}
+.microsite .field--name-field-tagline {
+  text-align: center;
+}
+.landing-page-body,
+.landing-page-list { margin-left: 15px;}
+
+.landing-page-body .field--name-field-action-links {
+  display: inline-flex;
+  margin-right: 10px;
+}
+
+
+

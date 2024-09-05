@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Group Study Reservations - for iPads</title>
+<link href="https://fonts.googleapis.com/css?family=Hind+Vadodara|Crimson+Text" rel="stylesheet">
+<script src="https://kit.fontawesome.com/50254fab5d.js" crossorigin="anonymous"></script>
+<style>
+body {
+  margin: 25px 0;
+  background-color: #b7b7b7;
+  background-image: url("Library_20170622_KT_0237.JPG");
+  text-align: center;
+  font-family: 'Hind Vadodara', sans-serif;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (orientation: landscape) {
+  body {
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 122%;
+  }
+}
+@media (orientation: portrait) {
+  body {
+    background-position: 35% top;
+    background-repeat: no-repeat;
+    background-size: 220%;
+  }
+}
+h1 {
+  font-family: 'Crimson Text', serif;
+  font-size: 4.5em;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255,255,255,0.5);
+  padding-bottom: 45px;
+}
+.button {
+  background-color: #007d83;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #006267;
+  height: 50px;
+  width: 29%;
+  padding: 4%;
+  display: inline-block;
+  margin: 15px 0 2px 0;
+  border-radius: 4px;
+  font-size: 2.3em;
+  text-shadow: 0 0 5px #000;
+}
+.button-secondary {
+  background-color: #ddd;
+  color: #007d83;
+  text-shadow: none;
+}
+.container a.button:nth-of-type(2) {
+  margin-top: 45px;
+}
+.container::before {
+  -webkit-filter: url('#blur');
+ filter: url('#blur');
+ -webkit-filter: blur(5px);
+ filter: blur(5px);
+ background-size: cover;
+}
+.glass {
+ opacity: 1;
+}
+.small {
+ text-transform: uppercase;
+ font-weight: bold;
+ color: #444;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="glass">
+<h1>Group Study Room Reservations</h1>
+<p>Select a floor to view and make reservations:</p>
+<a class="button" href="https://towson.libcal.com/booking/3rdFloor">Floor 3</a>
+<br/><span class="small"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> You are here.</a></span>
+<br/><a class="button button-secondary" href="https://towson.libcal.com/booking/2ndFloor">Floor 2</a>
+</div>
+</div>
+</body>
+</html>

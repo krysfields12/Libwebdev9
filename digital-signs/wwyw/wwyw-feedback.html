@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Feedback Form - for iPads in Portrait Orientation</title>
+<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+<style>
+body {
+  margin: 25px 0;
+  background: linear-gradient(141deg, #f7f9f8 0%, #d7d7d7 51%, #b8d4de 100%);
+  background-size: auto;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-family: 'Muli', sans-serif;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (orientation: portrait) {
+  body {
+    background-position: 77% 3%, 50% 50%;
+    background-repeat: no-repeat, repeat;
+    background-size: 284%, 100%;
+  }
+}
+h1 {
+  font-family: 'Muli', serif;
+  font-size: 2em;
+  margin-top: 30px;
+  color: #137091;
+}
+
+.btn-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255,255,255,0.5);
+}
+
+#button {
+  background-color: #137091;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #137091;
+  height: 50px;
+  width: 46%;
+  padding: 4%;
+  display: inline-block;
+  margin: 45px 0 45px 0;
+  border-radius: 4px;
+  font-size: 2.6em;
+  font-weight: bold;
+  text-shadow: 0 0 5px #000;
+}
+.btn-container::before {
+  -webkit-filter: url('#blur');
+ filter: url('#blur');
+ -webkit-filter: blur(5px);
+ filter: blur(5px);
+ background-size: cover;
+}
+.glass {
+ opacity: 1;
+}
+/*Begin Shape*/
+.container {
+  height: 950px;
+  margin-top: 320px;
+}
+.shape {
+  --size: 200px;
+  --line: 8px;
+  position: relative;
+  margin: auto;
+  margin-top: 100px;
+  display: block;
+  width: var(--size);
+  height: 200px;
+  border-radius: 60px;
+  border: var(--line) solid #fff;
+  text-align: center;
+}
+.shape:before, 
+.shape:after {
+  width: var(--size);
+  height: var(--size);
+  border-radius: 60px;
+  border: var(--line) solid #fff;
+  position: absolute;
+  display: block;
+  content: '';
+  top: calc(var(--line) * -1);
+  left: calc(var(--line) * -1);
+}
+.shape:before {
+  transform: rotate(30deg);
+}
+.shape:after {
+  transform: rotate(60deg);
+}
+.breathe {
+  animation-name: breathe;
+  animation-duration: 4s;
+  animation-delay: 0s;
+  animation-iteration-count:infinite;
+	animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+@keyframes breathe {
+  from { 
+    transform: scale(1);
+    border-color: #137091;
+  }
+	   to { 
+       transform: scale(2); 
+       border-color: #B2DFEE;
+  }
+}
+@keyframes breathe-offset {
+  from { 
+    border-color: #B2DFEE;
+  }
+	   to { 
+       border-color: #008B8B;
+  }
+}
+.message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Muli', sans-serif;
+  font-size: 1.6em;
+  color: #137091;
+}
+/*End Shape*/
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="shape breathe">
+    <div class="message">Breathe</div>
+  </div>
+</div>
+<div class="btn-container">
+<div class="glass">
+<h1>Breathe with the Shape</h1>
+<h2>An open source animation by Julia Caffrey. </br>
+We invite you to share your feedback on the exhibit.</h2>
+<h2>#whatWereYouWearingMD</h2>
+<a id="button" href="https://docs.google.com/forms/d/e/1FAIpQLSdj6_ojaG14Xg_1EIcUSwrLQyuZ2N2q9mC2HRrqyog3eEAF7w/viewform">Share your feedback</a>
+</div>
+</div>
+</body>
+</html>

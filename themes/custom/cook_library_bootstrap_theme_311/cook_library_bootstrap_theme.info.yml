@@ -1,0 +1,43 @@
+core: 8.x
+type: theme
+base theme: bootstrap
+core_version_requirement: ^8 || ^9
+
+name: 'Cook Library Bootstrapped - Updated for 8x.3.11'
+description: 'Uses the jsDelivr CDN for all CSS and JavaScript. No source files or compiling is necessary and is recommended for simple sites or beginners.'
+package: 'Bootstrap'
+
+regions:
+  announcement: 'Announcement'
+  header: 'Header'
+  navigation: 'Header Top Right Navigation'
+  navigation_collapsible: 'Navigation (Collapsible)'
+  top_bar: 'Top Bar'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  content: 'Content'
+  sidebar_first: 'Primary'
+  sidebar_second: 'Secondary'
+  lower_bar: 'Lower Bar'
+  footer: 'Footer'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+
+libraries:
+  - 'cook_library_bootstrap_theme/global-styling'
+  - 'cook_library_bootstrap_theme/background-image-toggle'
+  - 'cook_library_bootstrap_theme/bhi-search'
+  - 'cook_library_bootstrap_theme/flickity-accessible'
+  - 'cook_library_bootstrap_theme/profile-name'
+  - 'cook_library_bootstrap_theme/fonts'
+  - 'cook_library_bootstrap_theme/tu-web-fonts'
+  - 'cook_library_bootstrap_theme/jquery'
+  - 'cook_library_bootstrap_theme/hours'
+  - 'cook_library_bootstrap_theme/events-and-classes'
+  - 'cook_library_bootstrap_theme/occupancy'
+  - 'cook_library_bootstrap_theme/font-awesome'
+  - 'cook_library_bootstrap_theme/onesearch-popover'
+  - 'cook_library_bootstrap_theme/site-search'
+  - 'cook_library_bootstrap_theme/chat-slider'
+  - 'cook_library_bootstrap_theme/google-cse'
+  - 'cook_library_bootstrap_theme/tu-proxima-nova'
