@@ -8,7 +8,7 @@ dependencies:
   - drupal:block
   - drupal:filter
 
-# Information added by Drupal.org packaging script on 2023-01-27
-version: '8.x-1.0-beta2'
+# Information added by Drupal.org packaging script on 2024-11-14
+version: '8.x-1.0-beta3'
 project: 'insert_block'
-datestamp: 1674823238
+datestamp: 1731622540

@@ -27,7 +27,8 @@
 {% set pronouns %}{{ content.field_pronouns }}{% endset %}
 {% set interests %}{{ content.field_interests }}{% endset %}	
 {% set picture %}{{ content.user_picture }}{% endset %}	
-{% set presentations %}{{ content.field_presentations }}{% endset %}	
+{% set presentations %}{{ content.field_presentations }}{% endset %}
+{% set presentationsText %}{{ content.field_presentations_and_publicat }}{% endset %}	
 {% set subjectArea %}{{ content.field_subject_areas }}{% endset %}	
 {% set youcanbookme %}{{ content.field_youcanbook_me }}{% endset %}
 <article{{ attributes }}>
@@ -46,6 +47,7 @@
     {% if content.field_interests %}<div class="info">{{content.field_interests}}</div>{% endif %}
     {% if subjectArea %}<div class="info">{{ subjectArea }}</div>{% endif %}
     {% if presentations %}<div class="info">{{ presentations }}</div>{% endif %}
+    {% if presentationsText %}<div class="info">{{ presentationsText }}</div>{% endif %}
   </div>
 
   {% endif %}
